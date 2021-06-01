@@ -34,7 +34,7 @@ int cycles = 0;
 bool activeReactor = false;
 bool activatedWash = false;
 
-//Inicializa a variável da Thread.
+//Inicializa a condição da Thread em relação aos métodos.
 pthread_cond_t condition[Components];
 
 //Define os métodos.
@@ -170,7 +170,7 @@ void oilTank()
   }
 }
 
-//Método do óleo residual que calcula seu valor para cada ciclo.
+//Método do tanque do reator que calcula o valor de seu volume para cada ciclo.
 void reactorTank()
 {
   if (reactor[0] >= 1.25 && reactor[1] >= 1.25 && reactor[2] >= 2.50)
