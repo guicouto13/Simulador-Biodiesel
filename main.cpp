@@ -14,7 +14,7 @@ using namespace std;
 #define Components 11
 
 //Define o tempo de cada ciclo.
-int temp = 100;
+int temp = 1000;
 
 //Define as variáveis e seus respectivos valores.
 int Component[Components];
